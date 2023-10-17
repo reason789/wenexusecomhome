@@ -95,14 +95,12 @@
  }
 
  
-
- .Navbar_popupRelative {
+/* /////////////////////////////////////////////////////////  Popup */
+ .Popup_relative {
   position: relative;
 }
 
-
-
-.Navbar_popup {
+.Popup {
   position: absolute;
   top: 100%;
   right: 0;
@@ -118,10 +116,21 @@
   z-index: 999
 }
 
-.Navbar_popupRelative:hover .Navbar_popup {
+.Popup_relative:hover .Popup {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
+}
+/* /////////////////////////////////////////////////////////////////////////////  .Popup end */
+
+.Popup_p{
+  font-size: 1rem;
+  font-weight: 700;
+  color: #333333;
+  cursor: pointer;
+}
+.Popup_p:hover{
+  color: #ff7269;
 }
 
 .Navbar_flex{
@@ -152,6 +161,7 @@
 
 .Navbar_middleLayout{
   display: flex;
+  gap: 20px;
 }
 
 

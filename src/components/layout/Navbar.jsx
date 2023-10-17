@@ -6,8 +6,36 @@ import { PiDotsNineBold } from "react-icons/pi";
 import { FcGoogle } from "react-icons/fc";
 import IconButton from "../IconButton";
 import GeneralButton from "../GeneralButton";
+import Popup from "../Popup";
 
 const Navbar = () => {
+  const popupContent = (
+    <div>
+      <div class="Navbar_flex">
+        <GeneralButton name="Login" bgColor="#dbecff" color="#40a0f4" />
+        <GeneralButton name="Signup" bgColor="#ffebd4" color="#ffa64b" />
+      </div>
+      <div className="Navbar_googleFlex">
+        <FcGoogle size="30px" />
+        <p>Sign in with google</p>
+      </div>
+    </div>
+  );
+  const menContent = (
+    <div>
+      <p>This is men section</p>
+    </div>
+  );
+  const womenContent = (
+    <div>
+      <p>This is women section</p>
+    </div>
+  );
+  const kidsContent = (
+    <div>
+      <p>This is kids section</p>
+    </div>
+  );
   return (
     <nav>
       <div className="Navbar_container">
@@ -20,34 +48,14 @@ const Navbar = () => {
           </div>
         </Link>
         <div className="Navbar_middleLayout">
-          <p>Men</p>
-          <p>Women</p>
-          <p>Kids</p>
+          <Popup name="Men" content={menContent} />
+          <Popup name="Women" content={womenContent} />
+          <Popup name="Kids" content={kidsContent} />
         </div>
         <div className="Navbar_lastlayout">
           <HangedButton />
           <div className="Navbar_popupRelative">
-            <IconButton Icon={PiDotsNineBold} />
-            <div className="Navbar_popup">
-              <div>
-                <div class="Navbar_flex">
-                  <GeneralButton
-                    name="Login"
-                    bgColor="#dbecff"
-                    color="#40a0f4"
-                  />
-                  <GeneralButton
-                    name="Signup"
-                    bgColor="#ffebd4"
-                    color="#ffa64b"
-                  />
-                </div>
-                <div className="Navbar_googleFlex">
-                  <FcGoogle size="30px" />
-                  <p>Sign in with google</p>
-                </div>
-              </div>
-            </div>
+            <Popup Icon={PiDotsNineBold} content={popupContent} />
           </div>
         </div>
       </div>
