@@ -7,6 +7,7 @@ import { FcGoogle } from "react-icons/fc";
 import IconButton from "../IconButton";
 import GeneralButton from "../GeneralButton";
 import Popup from "../Popup";
+import cartIcon from "../../images/basket.png"
 
 const Navbar = () => {
   const popupContent = (
@@ -54,6 +55,10 @@ const Navbar = () => {
         </div>
         <div className="Navbar_lastlayout">
           <HangedButton />
+          <div className="Navbar_lastlayout_relative">
+            <img src={cartIcon} height="30px" width="30px"/>
+            <p>1</p>
+          </div>
           <div className="Navbar_popupRelative">
             <Popup Icon={PiDotsNineBold} content={popupContent} />
           </div>

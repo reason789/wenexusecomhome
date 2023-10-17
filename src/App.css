@@ -94,6 +94,72 @@
   gap: 50px;
  }
 
+ .Navbar_lastlayout_relative {
+  position: relative;
+  border-radius: 50%;
+  cursor: pointer;
+  /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);  */
+
+  /* Add a smooth transition for the hover effect */
+  transition:all 0.2s ease-in-out;
+}
+
+.Navbar_lastlayout_relative:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Increase shadow on hover */
+  transform: translateY(-2px);
+}
+
+
+ .Navbar_lastlayout_relative p{
+  position: absolute;
+  height: 16px;
+  width: 16px;
+  color: white;
+  font-size: 11px;
+  font-weight: 700;
+
+  border-radius: 50%;
+  background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  top: -7px;
+  right: -5px;
+ }
+/* /////////////////////////////////////////////////////////  End Navbar */
+
+/* /////////////////////////////////////////////////////////  Hero section */
+
+.Hero{
+  min-height: 200px;
+  padding: 50px 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Hero h1{
+  font-size: 2rem;
+  font-weight: 700;
+  color: #333333;
+  font-family: 'Great Vibes', cursive;
+}
+
+.Hero h3{
+  font-size: 1.2rem;
+  /* font-weight: 700; */
+  color: #666666;
+  font-family: 'Great Vibes', cursive;
+}
+
+.Hero_flex{
+  display: flex;
+}
+
+/* ///////////////////////////////////////////////////////// End Hero section */
+
  
 /* /////////////////////////////////////////////////////////  Popup */
  .Popup_relative {
@@ -128,6 +194,7 @@
   font-weight: 700;
   color: #333333;
   cursor: pointer;
+  transition: color 0.3s;
 }
 .Popup_p:hover{
   color: #ff7269;
@@ -250,7 +317,7 @@
   cursor: pointer;
   background-color: #f0f0f0;
 
-  transition: background-color 0.1s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
 }
 
 .IconButton:hover {
