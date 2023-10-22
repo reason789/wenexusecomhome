@@ -10,6 +10,7 @@ function App() {
       <Navbar />
       <Hero />
       <ServiceCard />
+      {/* <ServiceCard /> */}
       <div>
         <h1>sdfsdfd</h1>
         <h1>sdfsdfd</h1>

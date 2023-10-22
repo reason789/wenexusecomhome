@@ -413,8 +413,50 @@
 } */
   
 
-/* ////////////////////////////////////////////////////// ServiceCard_container   //////////////////////////////// */
+/* ////////////////////////////////////////////////////// ServiceCard   //////////////////////////////// */
 
+.ServiceCard{
+  background: linear-gradient(#ffe9e9, #fff8f8);
+  border-top: 5px solid rgba(255, 0, 0, 0.3);
+  width: 280px;
+  border-radius: 12px;
+  padding: 24px 28px;
+}
+
+.ServiceCard-flex{
+  display: flex;
+  justify-content: space-between;
+}
+
+.ServiceCard-top p{
+  color: #333333;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.ServiceCard-line{
+  width: 4px;
+  height: 20px;
+  background-color: #f66055;
+  border-radius: 10px;
+}
+
+.ServiceCard-top{
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.ServiceCard-text h3{
+  color: #666666;
+  margin-top: 4px;
+}
+
+.ServiceCard-image{
+  display: flex;
+  align-items: end;
+}
+/* 
 .ServiceCard_container{
   display: flex;
   background: linear-gradient(#ebf9f0, #f4fdf7);
@@ -429,4 +471,4 @@
 .ServiceCard_image{
   display: flex;
   align-items: end;
-}
+} */
