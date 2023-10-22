@@ -1,5 +1,5 @@
 import React from "react";
-import IconButton from "./IconButton";
+import IconButton from "./buttons/IconButton";
 
 const Popup = ({ Icon, name, content }) => {
   return (

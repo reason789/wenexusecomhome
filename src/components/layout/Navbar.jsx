@@ -1,13 +1,12 @@
 import React from "react";
 import logo from "../../images/logo.png";
 import { Link } from "react-router-dom";
-import HangedButton from "../HangedButton";
+import HangedButton from "../buttons/HangedButton";
 import { PiDotsNineBold } from "react-icons/pi";
 import { FcGoogle } from "react-icons/fc";
-import IconButton from "../IconButton";
-import GeneralButton from "../GeneralButton";
+import GeneralButton from "../buttons/GeneralButton";
 import Popup from "../Popup";
-import cartIcon from "../../images/basket.png"
+import cartIcon from "../../images/basket.png";
 
 const Navbar = () => {
   const popupContent = (
@@ -56,7 +55,7 @@ const Navbar = () => {
         <div className="Navbar_lastlayout">
           <HangedButton />
           <div className="Navbar_lastlayout_relative">
-            <img src={cartIcon} height="30px" width="30px"/>
+            <img src={cartIcon} height="30px" width="30px" />
             <p>1</p>
           </div>
           <div className="Navbar_popupRelative">
